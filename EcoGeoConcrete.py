@@ -21,8 +21,8 @@ st.write("Compara cuanto contamina el hormigon convencional y el geopolimerico")
 
 metros = st.number_input("Ingrese los m3 de hormigon", min_value=0.0, value=100.0)
 
-CO2Convencional = CalcularEmisiones(metros, "Convencional")
-CO2Polimerico = CalcularEmisiones(metros, "Geopolimerico")
+CO2Convencional = CalcularEmisiones(metros, "hormigonConvencional")
+CO2Polimerico = CalcularEmisiones(metros, "hormigonGeopolimerico")
 diferenciaHormigon = CalcularCO2(CO2Convencional, CO2Polimerico)
 
 st.write("Hormigon convencional:", CO2Convencional, "kg de CO2") ## Exequiel Maya
